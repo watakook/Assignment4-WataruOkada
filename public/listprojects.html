@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio page - Wataru Okada</title>
+        <style>
+            body {
+                text-align: center;
+                background-color: grey;
+            }
+            h1 {
+                display: inline-block;
+                background-color: aquamarine;
+            }
+            .logout {
+                display: block;
+                float: right;
+            }
+            .Assignment1 {
+                display: block;
+                background-color: blanchedalmond;
+            }
+            .Assignment2 {
+                display: block;
+                background-color: blanchedalmond;
+            }
+            .Assignment3 {
+                display: block;
+                background-color: blanchedalmond;
+            }
+        </style>
+        <script>
+            function viewWireframe() {
+                window.open('./images/Wireframe.jpg')
+            }
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+        <script src="js/firebase.js"></script>
+        <script src="https://matriz-teletrabajo-utc.web.app/lib/jquery/jquery-3.2.1.min.js"></script>
+        <script src="js/home.js"></script>
+    </head>
+    <body>
+        <h1>List of My Projects</h1>
+        <a id="sign-out" class="btn bg-danger mt-4 text-white w-100" href="#">Sign Out</a>
+        <div class="Assignment1">
+            <h2>Assignment1</h2>
+            <a href="https://assignment1wataruokada.web.app">Assignment1 here</a>
+        </div>
+        <div class="Assignment2">
+            <h2>Assignment2</h2>
+            <a href="https://assignment2wataruokada.web.app">Assignment2 here</a>
+        </div>
+        <div class="Assignment3">
+            <h2>Assignment3</h2>
+            <a href="https://assignment3wataruokada.web.app">Assignment3 here</a><br>
+            <label for="wireframe"><button onclick="viewWireframe()">View Wireframe</button></label>
+        </div>
+    </body>
+</html>
